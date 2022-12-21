@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Offs Brasil</string>
+    <string name="support">Atendimento</string>
+    <string name="share">Compartilhar</string>
+    <string name="download_success">Download concluído com sucesso!</string>
+    <string name="give_permissions">Dar Permissões</string>
+
+    <string name="phone">Telefone: (11) 2348–5184</string>
+    <string name="whatsapp">WhatsApp: (11) 9 4522–2403</string>
+    <string name="whatsapp_message">Ol%C3%A1,%20estou%20entrando%20em%20contato%20pelo%20app%20da%20Offs%20Brasil!%20Pode%20me%20ajudar?</string>
+    <string name="email">atendimento@offsbrasil.com.br</string>
+    <string name="address">Av. Paulista 1765, 7º andar\nBela Vista, São Paulo - SP\nCEP 01311-200</string>
+
+    <string name="instagram_page_id">offsbrasil</string>
+    <string name="facebook_page_id">offsbrasil</string>
+    <string name="youtube">https://www.youtube.com/channel/UCUohgRDibLaaj_KgWP8ZvYw/videos</string>
+    <string name="blog">https://blog.offsbrasil.com.br</string>
+
+    <string name="share_app_message">Olá! 😃\nQuero te convidar para conhecer a OffsBrasil, a maior produtora on-line do país! São mais de 200 locutores! É só acessar o site https://www.offsbrasil.com.br</string>
+
+</resources>
