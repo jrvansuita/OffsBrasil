@@ -14,7 +14,10 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
+import androidx.compose.material.TextField
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -135,6 +138,15 @@ private fun CreateIcon(item: SupportItem) {
 		contentDescription = null,
 		tint = Color.White
 	)
+
+	val text = remember { mutableStateOf("") }
+
+	TextField(
+		value = text.value,
+		onValueChange = { text.value = it },
+		modifier = Modifier.fillMaxWidth()
+	)
+
 	Spacer(modifier = Modifier.padding(8.dp))
 }
 

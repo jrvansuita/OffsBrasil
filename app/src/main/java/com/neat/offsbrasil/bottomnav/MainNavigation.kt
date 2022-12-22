@@ -23,12 +23,15 @@ import com.neat.offsbrasil.downloader.DownloaderWrapper
 import com.neat.offsbrasil.extensions.launchShareApp
 import com.neat.offsbrasil.theme.AppTheme
 import com.neat.offsbrasil.ui.main.MainScreen
+import com.neat.offsbrasil.ui.main.MainViewState
 import com.neat.offsbrasil.ui.support.SupportScreen
 
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun MainNavigationScreen(
+	state: MainViewState,
+	onUrlChanged: (String) -> Unit,
 	webChromeClient: AccompanistWebChromeClient,
 	downloaderWrapper: DownloaderWrapper
 ) {
@@ -43,7 +46,7 @@ fun MainNavigationScreen(
 					SupportScreen()
 				}
 				composable(BottomNavItems.Main.route) {
-					MainScreen(webChromeClient, downloaderWrapper)
+					MainScreen(state, onUrlChanged, webChromeClient, downloaderWrapper)
 				}
 			}
 		}

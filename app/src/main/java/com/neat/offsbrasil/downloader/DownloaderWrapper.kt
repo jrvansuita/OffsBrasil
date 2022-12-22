@@ -18,6 +18,7 @@ class DownloaderWrapper(private val context: Context) {
 		).show()
 
 		ContextCompat.startActivity(context, Intent(Intent.ACTION_VIEW).apply {
+			flags = Intent.FLAG_ACTIVITY_NEW_TASK
 			data = Uri.parse(url)
 		}, null)
 	}
